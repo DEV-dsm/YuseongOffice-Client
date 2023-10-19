@@ -1,16 +1,14 @@
-'use client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // pages
+import MainPage from 'pages/main/page';
 
-const Router = () => {
+export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route />
+                <Route path="/" element={<MainPage />} />
             </Routes>
         </BrowserRouter>
     );
-};
-
-export default Router;
+}
